@@ -70,8 +70,11 @@ jobs:
           setupGitUser: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           # Enables `npm publish --provenance` inside `changeset publish` via npm config.
           # Alternative is `publishConfig.provenance` in each package.json (see docs below).
           NPM_CONFIG_PROVENANCE: "true"
-          # No NPM_TOKEN — OIDC Trusted Publishing exchanges the GitHub id-token
-          # for a short-lived npm token automatically (requires Trusted Publisher configured on npmjs.com).
+          # If NPM_TOKEN is set (first publish for new @kndwin/* scope), changesets/action
+          # will use it. Otherwise it falls back to OIDC Trusted Publishing (requires
+          # Trusted Publisher configured on npmjs.com for each package).
