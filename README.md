@@ -13,8 +13,8 @@ bun install
 ```ts
 import { Effect, Layer } from "effect";
 import { KeyValueStore } from "effect/unstable/persistence";
-import { Auth, EmailAndPassword } from "@kndwin/server";
-import { AuthStorageKeyValue } from "@kndwin/server/storage/key-value";
+import { Auth, EmailAndPassword } from "@kndwin/effect-auth-server";
+import { AuthStorageKeyValue } from "@kndwin/effect-auth-server/storage/key-value";
 
 const sender = {
   send: (message: { to: string; subject: string; text?: string }) =>
@@ -40,7 +40,7 @@ Mount the shipped API and serve it:
 import { HttpRouter } from "effect/unstable/http";
 import { HttpApiBuilder } from "effect/unstable/httpapi";
 import { BunHttpServer } from "@effect/platform-bun";
-import { authApi, AuthHttp } from "@kndwin/server";
+import { authApi, AuthHttp } from "@kndwin/effect-auth-server";
 
 const ApiLive = HttpApiBuilder.layer(authApi).pipe(
   Layer.provide(AuthHttp.layer(authApi)),
@@ -57,7 +57,7 @@ Layer.launch(
 From the browser:
 
 ```ts
-import { BrowserAuthClient } from "@kndwin/client/browser";
+import { BrowserAuthClient } from "@kndwin/effect-auth-client/browser";
 
 const auth = yield* BrowserAuthClient;
 yield* auth.email.signIn({ email, password });
@@ -77,10 +77,10 @@ bun --cwd apps/example-postgres-foldkit run dev
 
 | Package | |
 | --- | --- |
-| [`@kndwin/server`](packages/effect-auth-server) | `Auth`, HTTP, email, SQL + KeyValue storage |
-| [`@kndwin/client`](packages/effect-auth-client) | Browser + native clients |
-| [`@kndwin/oauth`](packages/effect-auth-oauth) | GitHub + Google providers |
-| [`@kndwin/plugin-organization`](packages/effect-auth-plugin-organization) | Orgs, members, invitations |
+| [`@kndwin/effect-auth-server`](packages/effect-auth-server) | `Auth`, HTTP, email, SQL + KeyValue storage |
+| [`@kndwin/effect-auth-client`](packages/effect-auth-client) | Browser + native clients |
+| [`@kndwin/effect-auth-oauth`](packages/effect-auth-oauth) | GitHub + Google providers |
+| [`@kndwin/effect-auth-plugin-organization`](packages/effect-auth-plugin-organization) | Orgs, members, invitations |
 
 ```sh
 bun tsc --noEmit

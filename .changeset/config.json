@@ -4,10 +4,10 @@
   "commit": false,
   "fixed": [
     [
-      "@kndwin/server",
-      "@kndwin/client",
-      "@kndwin/oauth",
-      "@kndwin/plugin-organization"
+      "@kndwin/effect-auth-server",
+      "@kndwin/effect-auth-client",
+      "@kndwin/effect-auth-oauth",
+      "@kndwin/effect-auth-plugin-organization"
     ]
   ],
   "linked": [],

@@ -1,5 +1,5 @@
 {
-  "name": "@kndwin/plugin-organization",
+  "name": "@kndwin/effect-auth-plugin-organization",
   "version": "0.0.1",
   "type": "module",
   "main": "./dist/index.js",
@@ -37,7 +37,7 @@
   },
   "peerDependencies": {
     "effect": "4.0.0-beta.92",
-    "@kndwin/server": "workspace:*"
+    "@kndwin/effect-auth-server": "^0.0.1"
   },
   "devDependencies": {
     "effect": "4.0.0-beta.92",

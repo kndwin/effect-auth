@@ -1,4 +1,4 @@
-import { AuthClient, User } from "@kndwin/client";
+import { AuthClient, User } from "@kndwin/effect-auth-client";
 import { Effect, Schema as S } from "effect";
 import { Command, Runtime, type Update } from "foldkit";
 import { Document, Html, HtmlBuilder } from "foldkit/html";

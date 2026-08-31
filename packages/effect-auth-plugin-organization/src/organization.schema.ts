@@ -1,5 +1,5 @@
 import { Schema, type Effect } from "effect";
-import { UserSchema } from "@kndwin/server";
+import { UserSchema } from "@kndwin/effect-auth-server";
 
 export const OrgRoleSchema = Schema.Union([
   Schema.Literal("owner"),

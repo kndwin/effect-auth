@@ -1,6 +1,6 @@
 # example-postgres-react
 
-Self-contained Postgres + `@kndwin/server` + React client.
+Self-contained Postgres + `@kndwin/effect-auth-server` + React client.
 
 ```
 client/          Vite UI (port 5173), proxies `/auth` → `:3000`

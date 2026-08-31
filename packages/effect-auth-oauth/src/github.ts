@@ -6,7 +6,7 @@ import {
   authorizationUrl,
   getJson,
   postFormJson,
-} from "@kndwin/server";
+} from "@kndwin/effect-auth-server";
 import {
   GitHubTokenResponseSchema,
   GitHubUserResponseSchema,

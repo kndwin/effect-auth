@@ -1,5 +1,5 @@
 import { Schema } from "effect";
-import type { AuthProvider } from "@kndwin/server";
+import type { AuthProvider } from "@kndwin/effect-auth-server";
 
 export class GoogleProviderOptionsModel extends Schema.Class<GoogleProviderOptionsModel>(
   "GoogleProviderOptions",

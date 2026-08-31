@@ -1,4 +1,4 @@
-# @kndwin/server
+# @kndwin/effect-auth-server
 
 ## 0.0.1
 

@@ -1,10 +1,10 @@
-# `@kndwin/oauth`
+# `@kndwin/effect-auth-oauth`
 
 GitHub and Google OAuth providers for `Auth.make({ auth: [...] })`.
 
 ```ts
-import { Auth } from "@kndwin/server";
-import { GitHubProvider, GoogleProvider } from "@kndwin/oauth";
+import { Auth } from "@kndwin/effect-auth-server";
+import { GitHubProvider, GoogleProvider } from "@kndwin/effect-auth-oauth";
 
 Auth.make({
   appUrl: "http://localhost:3000",
@@ -21,4 +21,4 @@ Auth.make({
 });
 ```
 
-Subpaths: `@kndwin/oauth/github`, `@kndwin/oauth/google`.
+Subpaths: `@kndwin/effect-auth-oauth/github`, `@kndwin/effect-auth-oauth/google`.

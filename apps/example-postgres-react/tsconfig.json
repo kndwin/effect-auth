@@ -12,10 +12,10 @@
     "noEmit": true,
     "skipLibCheck": true,
     "paths": {
-      "@kndwin/server": ["../../packages/effect-auth-server/src/index.ts"],
-      "@kndwin/server/*": ["../../packages/effect-auth-server/src/*"],
-      "@kndwin/client": ["../../packages/effect-auth-client/src/client.ts"],
-      "@kndwin/client/*": ["../../packages/effect-auth-client/src/*"]
+      "@kndwin/effect-auth-server": ["../../packages/effect-auth-server/src/index.ts"],
+      "@kndwin/effect-auth-server/*": ["../../packages/effect-auth-server/src/*"],
+      "@kndwin/effect-auth-client": ["../../packages/effect-auth-client/src/client.ts"],
+      "@kndwin/effect-auth-client/*": ["../../packages/effect-auth-client/src/*"]
     }
   },
   "include": ["client/src", "server", "vite.config.ts"]

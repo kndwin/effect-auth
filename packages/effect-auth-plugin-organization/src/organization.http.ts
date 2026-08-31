@@ -1,6 +1,6 @@
 import { Context } from "effect";
 import { HttpApiEndpoint, HttpApiGroup, HttpApiMiddleware, HttpApiSchema } from "effect/unstable/httpapi";
-import { AuthErrorSchema, CurrentUser, OkSchema, RequireSession, Unauthorized, sessionCookieSecurity } from "@kndwin/server";
+import { AuthErrorSchema, CurrentUser, OkSchema, RequireSession, Unauthorized, sessionCookieSecurity } from "@kndwin/effect-auth-server";
 import {
   ActiveOrganizationResponse,
   CreateOrganizationInput,

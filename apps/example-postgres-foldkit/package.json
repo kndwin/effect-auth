@@ -14,8 +14,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@kndwin/client": "workspace:*",
-    "@kndwin/server": "workspace:*",
+    "@kndwin/effect-auth-client": "workspace:*",
+    "@kndwin/effect-auth-server": "workspace:*",
     "@effect/platform-bun": "4.0.0-beta.92",
     "@effect/sql-pg": "4.0.0-beta.92",
     "effect": "4.0.0-beta.92",

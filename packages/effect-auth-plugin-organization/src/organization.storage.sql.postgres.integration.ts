@@ -1,9 +1,9 @@
 import { assert, describe, it } from "@effect/vitest";
 import { Effect, Layer } from "effect";
 import { SqlClient } from "effect/unstable/sql";
-import { AuthStorage } from "@kndwin/server";
-import { AuthStorageSql } from "@kndwin/server/storage/sql";
-import { postgresClientLayer, registerPostgresHarness } from "@kndwin/server/storage/sql.postgres.harness";
+import { AuthStorage } from "@kndwin/effect-auth-server";
+import { AuthStorageSql } from "@kndwin/effect-auth-server/storage/sql";
+import { postgresClientLayer, registerPostgresHarness } from "@kndwin/effect-auth-server/storage/sql.postgres.harness";
 import { OrganizationStorage } from "./organization.storage";
 import { OrganizationStorageSql } from "./sql";
 

@@ -1,4 +1,4 @@
-import { AuthClient, User } from "@kndwin/client";
+import { AuthClient, User } from "@kndwin/effect-auth-client";
 import { Machine } from "@typeonce/effect-machine";
 import { Effect, Schema } from "effect";
 
