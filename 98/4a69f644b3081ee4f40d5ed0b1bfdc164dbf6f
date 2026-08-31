@@ -1,0 +1,14 @@
+.changeset/khaki-sites-mix.md
+  h_ba3efde196eb39 1-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "984a69f644b3081ee4f40d5ed0b1bfdc164dbf6f",
+  "prompts": {},
+  "humans": {
+    "h_ba3efde196eb39": {
+      "author": "Kevin <kevin@sucasa.com.au>"
+    }
+  }
+}
