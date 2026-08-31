@@ -1,0 +1,89 @@
+.changeset/config.json
+  s_757c5452c23635::t_1d03521aa09ec4 1-21
+apps/example-postgres-foldkit/client/index.html
+  s_837a062065fbf2::t_44ae9eccd3018a 1-12
+apps/example-postgres-foldkit/client/src/main.ts
+  s_837a062065fbf2::t_c4e7234cab086c 1-368
+apps/example-postgres-foldkit/package.json
+  s_837a062065fbf2::t_92af6148986086 1-28
+apps/example-postgres-react/.gitignore
+  s_837a062065fbf2::t_5d4043c6a6c44d 1-8
+apps/example-postgres-react/client/.gitignore
+  s_837a062065fbf2::t_e09c2cbf1f896b 1-7
+apps/example-postgres-react/client/index.html
+  s_837a062065fbf2::t_a6013807263f83 1-12
+apps/example-postgres-react/client/src/App.tsx
+  s_837a062065fbf2::t_32ed781c31371b 1-139
+apps/example-postgres-react/package.json
+  s_837a062065fbf2::t_7e8f9c541734ca 1-33
+apps/example-postgres-react/vite.config.ts
+  s_837a062065fbf2::t_47016f7bcd2c44 1-17
+bun.lock
+  s_757c5452c23635::t_83d159f4ecd3aa 1-889
+package.json
+  s_757c5452c23635::t_8b414d94a792e0 1-25
+packages/effect-auth-client/package.json
+  s_757c5452c23635::t_0e86edcb3fb097 1-28
+packages/effect-auth-client/tsup.config.ts
+  s_757c5452c23635::t_9a7fd1dc561225 1-22
+packages/effect-auth-oauth/package.json
+  s_757c5452c23635::t_a26b4b5a159ffa 1-30
+packages/effect-auth-oauth/src/index.ts
+  s_837a062065fbf2::t_a2f3b5841d45cf 1-13
+packages/effect-auth-oauth/tsup.config.ts
+  s_757c5452c23635::t_37f849c979c465 1-20
+packages/effect-auth-plugin-organization/package.json
+  s_757c5452c23635::t_8e9045b78978b0 1-29
+packages/effect-auth-plugin-organization/src/client.ts
+  s_837a062065fbf2::t_ba00fd29654b21 1-79
+packages/effect-auth-plugin-organization/src/index.ts
+  s_837a062065fbf2::t_fb9b58f14dece2 1-22
+packages/effect-auth-plugin-organization/src/organization.http.live.ts
+  s_837a062065fbf2::t_476090d5cf6f98 1-175
+packages/effect-auth-plugin-organization/src/organization.http.ts
+  s_837a062065fbf2::t_6985023bd95c07 1-94
+packages/effect-auth-plugin-organization/src/organization.schema.ts
+  s_837a062065fbf2::t_d7d17a9990eb6c 1-222
+packages/effect-auth-plugin-organization/tsconfig.json
+  s_837a062065fbf2::t_605d722e4f293d 1-4
+packages/effect-auth-plugin-organization/tsup.config.ts
+  s_757c5452c23635::t_7661b8c5b02afe 1-19
+packages/effect-auth-server/package.json
+  s_757c5452c23635::t_4a01fe40c950af 1-48
+packages/effect-auth-server/src/index.ts
+  s_837a062065fbf2::t_9b67e010c66bef 1-13
+packages/effect-auth-server/src/providers.schema.ts
+  s_837a062065fbf2::t_a84a2b278d7779 1-43
+packages/effect-auth-server/src/providers.ts
+  s_837a062065fbf2::t_ca333efb338ca0 1-18
+packages/effect-auth-server/src/providers/oauth.ts
+  s_837a062065fbf2::t_b4b234bcef4b7d 1-39
+packages/effect-auth-server/src/storage/sql.postgres.integration.ts
+  s_837a062065fbf2::t_104433dcc10e35 1-57
+packages/effect-auth-server/tsup.config.ts
+  s_757c5452c23635::t_d606b24dfb8c6b 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "79588dbc3067bd9d924052222e0667191596c33f",
+  "prompts": {},
+  "sessions": {
+    "s_757c5452c23635": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "d47e2e94-0323-42b9-8ea7-730fb17ecb59",
+        "model": "grok-4.6"
+      },
+      "human_author": "Kevin <kevin@sucasa.com.au>"
+    },
+    "s_837a062065fbf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1da0084d-7edd-4edf-a41f-6c8f674997e8",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Kevin <kevin@sucasa.com.au>"
+    }
+  }
+}
