@@ -1,19 +1,39 @@
 {
   "name": "@effect-auth/oauth",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
-    "./github": { "types": "./dist/github.d.ts", "import": "./dist/github.js" },
-    "./github/schema": { "types": "./dist/github/schema.d.ts", "import": "./dist/github/schema.js" },
-    "./google": { "types": "./dist/google.d.ts", "import": "./dist/google.js" },
-    "./google/schema": { "types": "./dist/google/schema.d.ts", "import": "./dist/google/schema.js" }
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./github": {
+      "types": "./dist/github.d.ts",
+      "import": "./dist/github.js"
+    },
+    "./github/schema": {
+      "types": "./dist/github/schema.d.ts",
+      "import": "./dist/github/schema.js"
+    },
+    "./google": {
+      "types": "./dist/google.d.ts",
+      "import": "./dist/google.js"
+    },
+    "./google/schema": {
+      "types": "./dist/google/schema.d.ts",
+      "import": "./dist/google/schema.js"
+    }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
-  "publishConfig": { "access": "public", "provenance": true },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "build": "tsup",
     "prepublishOnly": "bun run build",

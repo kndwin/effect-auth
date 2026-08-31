@@ -1,33 +1,95 @@
 {
   "name": "@effect-auth/server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
-    "./schema": { "types": "./dist/schema.d.ts", "import": "./dist/schema.js" },
-    "./server": { "types": "./dist/server.d.ts", "import": "./dist/server.js" },
-    "./server/schema": { "types": "./dist/server/schema.d.ts", "import": "./dist/server/schema.js" },
-    "./http": { "types": "./dist/http.d.ts", "import": "./dist/http.js" },
-    "./http/schema": { "types": "./dist/http/schema.d.ts", "import": "./dist/http/schema.js" },
-    "./http.live": { "types": "./dist/http.live.d.ts", "import": "./dist/http.live.js" },
-    "./email": { "types": "./dist/email.d.ts", "import": "./dist/email.js" },
-    "./email/schema": { "types": "./dist/email/schema.d.ts", "import": "./dist/email/schema.js" },
-    "./email/templates": { "types": "./dist/email/templates.d.ts", "import": "./dist/email/templates.js" },
-    "./providers": { "types": "./dist/providers.d.ts", "import": "./dist/providers.js" },
-    "./providers/schema": { "types": "./dist/providers/schema.d.ts", "import": "./dist/providers/schema.js" },
-    "./providers/oauth": { "types": "./dist/providers/oauth.d.ts", "import": "./dist/providers/oauth.js" },
-    "./storage": { "types": "./dist/storage.d.ts", "import": "./dist/storage.js" },
-    "./storage/schema": { "types": "./dist/storage/schema.d.ts", "import": "./dist/storage/schema.js" },
-    "./storage/sql": { "types": "./dist/storage/sql.d.ts", "import": "./dist/storage/sql.js" },
-    "./storage/sql/schema": { "types": "./dist/storage/sql/schema.d.ts", "import": "./dist/storage/sql/schema.js" },
-    "./storage/key-value": { "types": "./dist/storage/key-value.d.ts", "import": "./dist/storage/key-value.js" },
-    "./storage/key-value/schema": { "types": "./dist/storage/key-value/schema.d.ts", "import": "./dist/storage/key-value/schema.js" }
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./schema": {
+      "types": "./dist/schema.d.ts",
+      "import": "./dist/schema.js"
+    },
+    "./server": {
+      "types": "./dist/server.d.ts",
+      "import": "./dist/server.js"
+    },
+    "./server/schema": {
+      "types": "./dist/server/schema.d.ts",
+      "import": "./dist/server/schema.js"
+    },
+    "./http": {
+      "types": "./dist/http.d.ts",
+      "import": "./dist/http.js"
+    },
+    "./http/schema": {
+      "types": "./dist/http/schema.d.ts",
+      "import": "./dist/http/schema.js"
+    },
+    "./http.live": {
+      "types": "./dist/http.live.d.ts",
+      "import": "./dist/http.live.js"
+    },
+    "./email": {
+      "types": "./dist/email.d.ts",
+      "import": "./dist/email.js"
+    },
+    "./email/schema": {
+      "types": "./dist/email/schema.d.ts",
+      "import": "./dist/email/schema.js"
+    },
+    "./email/templates": {
+      "types": "./dist/email/templates.d.ts",
+      "import": "./dist/email/templates.js"
+    },
+    "./providers": {
+      "types": "./dist/providers.d.ts",
+      "import": "./dist/providers.js"
+    },
+    "./providers/schema": {
+      "types": "./dist/providers/schema.d.ts",
+      "import": "./dist/providers/schema.js"
+    },
+    "./providers/oauth": {
+      "types": "./dist/providers/oauth.d.ts",
+      "import": "./dist/providers/oauth.js"
+    },
+    "./storage": {
+      "types": "./dist/storage.d.ts",
+      "import": "./dist/storage.js"
+    },
+    "./storage/schema": {
+      "types": "./dist/storage/schema.d.ts",
+      "import": "./dist/storage/schema.js"
+    },
+    "./storage/sql": {
+      "types": "./dist/storage/sql.d.ts",
+      "import": "./dist/storage/sql.js"
+    },
+    "./storage/sql/schema": {
+      "types": "./dist/storage/sql/schema.d.ts",
+      "import": "./dist/storage/sql/schema.js"
+    },
+    "./storage/key-value": {
+      "types": "./dist/storage/key-value.d.ts",
+      "import": "./dist/storage/key-value.js"
+    },
+    "./storage/key-value/schema": {
+      "types": "./dist/storage/key-value/schema.d.ts",
+      "import": "./dist/storage/key-value/schema.js"
+    }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
-  "publishConfig": { "access": "public", "provenance": true },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "build": "tsup",
     "prepublishOnly": "bun run build",
