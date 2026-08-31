@@ -1,0 +1,40 @@
+.changeset/config.json
+  h_ba3efde196eb39 7
+bun.lock
+  h_ba3efde196eb39 23-24,39-40,54-69,71-72,77,82-83,89,94-95,101,106-107,271,273,275-277,279,281,283
+packages/effect-auth/README.md
+  h_ba3efde196eb39 1-21
+packages/effect-auth/package.json
+  h_ba3efde196eb39 1-38
+packages/effect-auth/src/client.ts
+  h_ba3efde196eb39 1
+packages/effect-auth/src/index.ts
+  h_ba3efde196eb39 1-25
+packages/effect-auth/src/oauth.ts
+  h_ba3efde196eb39 1
+packages/effect-auth/src/oauth/github.ts
+  h_ba3efde196eb39 1
+packages/effect-auth/src/oauth/google.ts
+  h_ba3efde196eb39 1
+packages/effect-auth/src/plugin-organization.ts
+  h_ba3efde196eb39 1
+packages/effect-auth/src/plugin-organization/client.ts
+  h_ba3efde196eb39 1
+packages/effect-auth/src/server.ts
+  h_ba3efde196eb39 1
+packages/effect-auth/tsup.config.ts
+  h_ba3efde196eb39 1-23
+tsconfig.json
+  h_ba3efde196eb39 16-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "5fb8b5faf468b289eb35a7704bdd53db69172a02",
+  "prompts": {},
+  "humans": {
+    "h_ba3efde196eb39": {
+      "author": "Kevin <kevin@sucasa.com.au>"
+    }
+  }
+}
