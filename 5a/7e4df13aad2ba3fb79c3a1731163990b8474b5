@@ -1,0 +1,14 @@
+.github/workflows/release.yml
+  h_ba3efde196eb39 73-74,78-80
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "5a7e4df13aad2ba3fb79c3a1731163990b8474b5",
+  "prompts": {},
+  "humans": {
+    "h_ba3efde196eb39": {
+      "author": "Kevin <kevin@sucasa.com.au>"
+    }
+  }
+}
