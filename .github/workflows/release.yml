@@ -54,10 +54,8 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      # Optional but recommended: verify the release artefact builds.
-      # If no `build` script exists yet this is a no-op due to --if-present.
       - name: Build packages
-        run: bun run build --if-present
+        run: bun run build
 
       - name: Create Release PR or Publish to npm
         id: changesets

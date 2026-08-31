@@ -40,6 +40,4 @@ jobs:
           fi
 
       - name: Build (tsup)
-        # --if-present so CI stays green before tsup is wired up.
-        # Once each package has a `build` script (e.g. "tsup"), this becomes a hard check.
-        run: bun run build --if-present
+        run: bun run build
