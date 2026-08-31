@@ -1,0 +1,38 @@
+{
+  "name": "@kndwin/effect-auth",
+  "version": "0.0.1",
+  "description": "Umbrella barrel for @kndwin/effect-auth-* — server, client, oauth and organization in one install",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
+    "./server": { "types": "./dist/server.d.ts", "import": "./dist/server.js" },
+    "./client": { "types": "./dist/client.d.ts", "import": "./dist/client.js" },
+    "./oauth": { "types": "./dist/oauth.d.ts", "import": "./dist/oauth.js" },
+    "./oauth/github": { "types": "./dist/oauth/github.d.ts", "import": "./dist/oauth/github.js" },
+    "./oauth/google": { "types": "./dist/oauth/google.d.ts", "import": "./dist/oauth/google.js" },
+    "./plugin-organization": { "types": "./dist/plugin-organization.d.ts", "import": "./dist/plugin-organization.js" },
+    "./plugin-organization/client": { "types": "./dist/plugin-organization/client.d.ts", "import": "./dist/plugin-organization/client.js" }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "publishConfig": { "access": "public", "provenance": true },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "bun run build",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@kndwin/effect-auth-server": "^0.0.1",
+    "@kndwin/effect-auth-client": "^0.0.1",
+    "@kndwin/effect-auth-oauth": "^0.0.1",
+    "@kndwin/effect-auth-plugin-organization": "^0.0.1"
+  },
+  "peerDependencies": {
+    "effect": "4.0.0-beta.92"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

@@ -13,6 +13,8 @@
     "strict": true,
     "target": "ES2022",
     "paths": {
+      "@kndwin/effect-auth": ["./packages/effect-auth/src/index.ts"],
+      "@kndwin/effect-auth/*": ["./packages/effect-auth/src/*"],
       "@kndwin/effect-auth-server": ["./packages/effect-auth-server/src/index.ts"],
       "@kndwin/effect-auth-server/*": ["./packages/effect-auth-server/src/*"],
       "@kndwin/effect-auth-client": ["./packages/effect-auth-client/src/client.ts"],

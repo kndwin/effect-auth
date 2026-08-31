@@ -4,6 +4,7 @@
   "commit": false,
   "fixed": [
     [
+      "@kndwin/effect-auth",
       "@kndwin/effect-auth-server",
       "@kndwin/effect-auth-client",
       "@kndwin/effect-auth-oauth",
