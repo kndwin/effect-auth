@@ -1,8 +1,8 @@
 import { Effect, Layer } from "effect";
 import { HttpServerRequest } from "effect/unstable/http";
 import { HttpApiBuilder, type HttpApi } from "effect/unstable/httpapi";
-import { Auth, AuthConfig, CurrentUser, Ok, Unauthorized } from "@effect-auth/server";
-import { sessionTokenFromRequest, toAuthError } from "@effect-auth/server/http.live";
+import { Auth, AuthConfig, CurrentUser, Ok, Unauthorized } from "@kndwin/server";
+import { sessionTokenFromRequest, toAuthError } from "@kndwin/server/http.live";
 import {
   ActiveOrganizationResponse,
   CurrentOrganizationValue,

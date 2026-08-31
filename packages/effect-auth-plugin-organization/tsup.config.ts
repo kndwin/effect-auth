@@ -15,5 +15,5 @@ export default defineConfig({
   treeshake: true,
   target: "es2022",
   outDir: "dist",
-  external: [/^effect(\/.*)?$/, /^@effect\/.*$/, /^@effect-auth\/.*/],
+  external: [/^effect(\/.*)?$/, /^@effect\/.*$/, /^@kndwin\/.*/],
 });

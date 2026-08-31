@@ -1,4 +1,4 @@
-import type { AuthPluginShape } from "@effect-auth/server";
+import type { AuthPluginShape } from "@kndwin/server";
 import { OrganizationService } from "./organization";
 import { OrganizationHttp, RequireOrganizationLive } from "./organization.http.live";
 import type { OrganizationDefineOptions } from "./organization.schema";

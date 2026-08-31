@@ -6,7 +6,7 @@ import {
   authorizationUrl,
   getJson,
   postFormJson,
-} from "@effect-auth/server";
+} from "@kndwin/server";
 import {
   GoogleTokenResponseSchema,
   GoogleUserResponseSchema,

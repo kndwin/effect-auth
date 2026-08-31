@@ -1,7 +1,7 @@
 import { Context, Effect, Layer } from "effect";
 import { FetchHttpClient } from "effect/unstable/http";
 import { HttpApi, HttpApiClient } from "effect/unstable/httpapi";
-import type { Ok } from "@effect-auth/server";
+import type { Ok } from "@kndwin/server";
 import { organizationGroup } from "./organization.http";
 import type {
   ActiveOrganizationResponse,

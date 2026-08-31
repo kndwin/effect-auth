@@ -1,13 +1,13 @@
-# `@effect-auth/plugin-organization`
+# `@kndwin/plugin-organization`
 
 Organizations, members, and invitations as an `Auth` plugin.
 
 ```ts
 import { Layer } from "effect";
-import { Auth } from "@effect-auth/server";
-import { AuthStorageSql } from "@effect-auth/server/storage/sql";
-import { Organization } from "@effect-auth/plugin-organization";
-import { OrganizationStorageSql } from "@effect-auth/plugin-organization/sql";
+import { Auth } from "@kndwin/server";
+import { AuthStorageSql } from "@kndwin/server/storage/sql";
+import { Organization } from "@kndwin/plugin-organization";
+import { OrganizationStorageSql } from "@kndwin/plugin-organization/sql";
 
 const plugin = Organization.define();
 
@@ -23,6 +23,6 @@ const AuthLive = Auth.make({
 // AuthHttp.layer(api, { plugins: [plugin] })
 ```
 
-- `@effect-auth/plugin-organization` — `Organization.define`, HTTP, `RequireOrganization`
-- `@effect-auth/plugin-organization/sql` — SQL storage
-- `@effect-auth/plugin-organization/client` — `OrganizationClient`
+- `@kndwin/plugin-organization` — `Organization.define`, HTTP, `RequireOrganization`
+- `@kndwin/plugin-organization/sql` — SQL storage
+- `@kndwin/plugin-organization/client` — `OrganizationClient`

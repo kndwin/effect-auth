@@ -1,5 +1,5 @@
 {
-  "name": "@effect-auth/example-postgres-react",
+  "name": "@kndwin/example-postgres-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,8 +14,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@effect-auth/client": "workspace:*",
-    "@effect-auth/server": "workspace:*",
+    "@kndwin/client": "workspace:*",
+    "@kndwin/server": "workspace:*",
     "@effect/platform-bun": "4.0.0-beta.92",
     "@effect/sql-pg": "4.0.0-beta.92",
     "effect": "4.0.0-beta.92",

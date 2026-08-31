@@ -1,6 +1,6 @@
 import { PgClient } from "@effect/sql-pg";
-import { Auth, AuthHttp, authApi, EmailAndPassword } from "@effect-auth/server";
-import { AuthStorageSql } from "@effect-auth/server/storage/sql";
+import { Auth, AuthHttp, authApi, EmailAndPassword } from "@kndwin/server";
+import { AuthStorageSql } from "@kndwin/server/storage/sql";
 import { Effect, Layer, Redacted } from "effect";
 import { HttpRouter } from "effect/unstable/http";
 import { HttpApiBuilder } from "effect/unstable/httpapi";

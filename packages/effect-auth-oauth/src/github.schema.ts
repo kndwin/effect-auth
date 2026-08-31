@@ -1,5 +1,5 @@
 import { Schema } from "effect";
-import type { AuthProvider } from "@effect-auth/server";
+import type { AuthProvider } from "@kndwin/server";
 
 export class GitHubProviderOptionsModel extends Schema.Class<GitHubProviderOptionsModel>(
   "GitHubProviderOptions",

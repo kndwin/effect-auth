@@ -15,13 +15,13 @@
       },
     },
     "apps/example-postgres-foldkit": {
-      "name": "@effect-auth/example-postgres-foldkit",
+      "name": "@kndwin/example-postgres-foldkit",
       "version": "0.0.0",
       "dependencies": {
-        "@effect-auth/client": "workspace:*",
-        "@effect-auth/server": "workspace:*",
         "@effect/platform-bun": "4.0.0-beta.92",
         "@effect/sql-pg": "4.0.0-beta.92",
+        "@kndwin/client": "workspace:*",
+        "@kndwin/server": "workspace:*",
         "effect": "4.0.0-beta.92",
         "foldkit": "0.154.0",
       },
@@ -31,13 +31,13 @@
       },
     },
     "apps/example-postgres-react": {
-      "name": "@effect-auth/example-postgres-react",
+      "name": "@kndwin/example-postgres-react",
       "version": "0.0.0",
       "dependencies": {
-        "@effect-auth/client": "workspace:*",
-        "@effect-auth/server": "workspace:*",
         "@effect/platform-bun": "4.0.0-beta.92",
         "@effect/sql-pg": "4.0.0-beta.92",
+        "@kndwin/client": "workspace:*",
+        "@kndwin/server": "workspace:*",
         "effect": "4.0.0-beta.92",
         "react": "19.2.4",
         "react-dom": "19.2.4",
@@ -52,42 +52,42 @@
       },
     },
     "packages/effect-auth-client": {
-      "name": "@effect-auth/client",
+      "name": "@kndwin/client",
       "version": "0.0.0",
       "devDependencies": {
         "typescript": "^5.9.3",
       },
       "peerDependencies": {
-        "@effect-auth/server": "workspace:*",
+        "@kndwin/server": "workspace:*",
         "effect": "4.0.0-beta.92",
       },
     },
     "packages/effect-auth-oauth": {
-      "name": "@effect-auth/oauth",
+      "name": "@kndwin/oauth",
       "version": "0.0.0",
       "devDependencies": {
         "effect": "4.0.0-beta.92",
         "typescript": "^5.9.3",
       },
       "peerDependencies": {
-        "@effect-auth/server": "workspace:*",
+        "@kndwin/server": "workspace:*",
         "effect": "4.0.0-beta.92",
       },
     },
     "packages/effect-auth-plugin-organization": {
-      "name": "@effect-auth/plugin-organization",
+      "name": "@kndwin/plugin-organization",
       "version": "0.0.0",
       "devDependencies": {
         "effect": "4.0.0-beta.92",
         "typescript": "^5.9.3",
       },
       "peerDependencies": {
-        "@effect-auth/server": "workspace:*",
+        "@kndwin/server": "workspace:*",
         "effect": "4.0.0-beta.92",
       },
     },
     "packages/effect-auth-server": {
-      "name": "@effect-auth/server",
+      "name": "@kndwin/server",
       "version": "0.0.0",
       "dependencies": {
         "@react-email/components": "^1.0.12",
@@ -182,18 +182,6 @@
 
     "@changesets/write": ["@changesets/write@0.4.0", "", { "dependencies": { "@changesets/types": "^6.1.0", "fs-extra": "^7.0.1", "human-id": "^4.1.1", "prettier": "^2.7.1" } }, "sha512-CdTLvIOPiCNuH71pyDu3rA+Q0n65cmAbXnwWH84rKGiFumFzkmHNT8KHTMEchcxN+Kl8I54xGUhJ7l3E7X396Q=="],
 
-    "@effect-auth/client": ["@effect-auth/client@workspace:packages/effect-auth-client"],
-
-    "@effect-auth/example-postgres-foldkit": ["@effect-auth/example-postgres-foldkit@workspace:apps/example-postgres-foldkit"],
-
-    "@effect-auth/example-postgres-react": ["@effect-auth/example-postgres-react@workspace:apps/example-postgres-react"],
-
-    "@effect-auth/oauth": ["@effect-auth/oauth@workspace:packages/effect-auth-oauth"],
-
-    "@effect-auth/plugin-organization": ["@effect-auth/plugin-organization@workspace:packages/effect-auth-plugin-organization"],
-
-    "@effect-auth/server": ["@effect-auth/server@workspace:packages/effect-auth-server"],
-
     "@effect/platform-bun": ["@effect/platform-bun@4.0.0-beta.92", "", { "dependencies": { "@effect/platform-node-shared": "^4.0.0-beta.92" }, "peerDependencies": { "effect": "^4.0.0-beta.92" } }, "sha512-Q/XKoE7gIHa1+ypOflLxR/TXitR094XUfTJmHGi/hV791+e2QJP+7Dcz+BPGqAKi9RU3DPyOMHzoUPop9eDKow=="],
 
     "@effect/platform-node-shared": ["@effect/platform-node-shared@4.0.0-rc.112", "", { "dependencies": { "@types/ws": "^8.18.1", "ws": "^8.21.3" }, "peerDependencies": { "effect": "^4.0.0-rc.112" } }, "sha512-ttjz0xKamFN7vL8pNDYVwddJLjZvqKePc05djlz2VcdaKbLsnYbtMnL1rbOfHgEnIUSHGh7FkjaN4DM1Ov81sQ=="],
@@ -263,6 +251,18 @@
     "@jridgewell/sourcemap-codec": ["@jridgewell/sourcemap-codec@1.6.0", "", {}, "sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw=="],
 
     "@jridgewell/trace-mapping": ["@jridgewell/trace-mapping@0.3.31", "", { "dependencies": { "@jridgewell/resolve-uri": "^3.1.0", "@jridgewell/sourcemap-codec": "^1.4.14" } }, "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw=="],
+
+    "@kndwin/client": ["@kndwin/client@workspace:packages/effect-auth-client"],
+
+    "@kndwin/example-postgres-foldkit": ["@kndwin/example-postgres-foldkit@workspace:apps/example-postgres-foldkit"],
+
+    "@kndwin/example-postgres-react": ["@kndwin/example-postgres-react@workspace:apps/example-postgres-react"],
+
+    "@kndwin/oauth": ["@kndwin/oauth@workspace:packages/effect-auth-oauth"],
+
+    "@kndwin/plugin-organization": ["@kndwin/plugin-organization@workspace:packages/effect-auth-plugin-organization"],
+
+    "@kndwin/server": ["@kndwin/server@workspace:packages/effect-auth-server"],
 
     "@manypkg/find-root": ["@manypkg/find-root@1.1.0", "", { "dependencies": { "@babel/runtime": "^7.5.5", "@types/node": "^12.7.1", "find-up": "^4.1.0", "fs-extra": "^8.1.0" } }, "sha512-mki5uBvhHzO8kYYix/WRy2WX8S3B5wdVSc9D6KcU5lQNglP2yt58/VfLuAK49glRXChosY8ap2oJ1qgma3GUVA=="],
 

@@ -1,6 +1,6 @@
 import { Context, Effect, Layer } from "effect";
 import { randomUUID } from "node:crypto";
-import { AuthFailure, AuthStorage, Unauthorized } from "@effect-auth/server";
+import { AuthFailure, AuthStorage, Unauthorized } from "@kndwin/server";
 import {
   FullOrganizationResponse,
   OrgMemberWithUser,

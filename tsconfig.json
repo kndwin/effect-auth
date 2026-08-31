@@ -13,17 +13,17 @@
     "strict": true,
     "target": "ES2022",
     "paths": {
-      "@effect-auth/server": ["./packages/effect-auth-server/src/index.ts"],
-      "@effect-auth/server/*": ["./packages/effect-auth-server/src/*"],
-      "@effect-auth/client": ["./packages/effect-auth-client/src/client.ts"],
-      "@effect-auth/client/*": ["./packages/effect-auth-client/src/*"],
-      "@effect-auth/oauth": ["./packages/effect-auth-oauth/src/index.ts"],
-      "@effect-auth/oauth/github": ["./packages/effect-auth-oauth/src/github.ts"],
-      "@effect-auth/oauth/google": ["./packages/effect-auth-oauth/src/google.ts"],
-      "@effect-auth/plugin-organization": ["./packages/effect-auth-plugin-organization/src/index.ts"],
-      "@effect-auth/plugin-organization/schema": ["./packages/effect-auth-plugin-organization/src/organization.schema.ts"],
-      "@effect-auth/plugin-organization/sql": ["./packages/effect-auth-plugin-organization/src/sql.ts"],
-      "@effect-auth/plugin-organization/client": ["./packages/effect-auth-plugin-organization/src/client.ts"]
+      "@kndwin/server": ["./packages/effect-auth-server/src/index.ts"],
+      "@kndwin/server/*": ["./packages/effect-auth-server/src/*"],
+      "@kndwin/client": ["./packages/effect-auth-client/src/client.ts"],
+      "@kndwin/client/*": ["./packages/effect-auth-client/src/*"],
+      "@kndwin/oauth": ["./packages/effect-auth-oauth/src/index.ts"],
+      "@kndwin/oauth/github": ["./packages/effect-auth-oauth/src/github.ts"],
+      "@kndwin/oauth/google": ["./packages/effect-auth-oauth/src/google.ts"],
+      "@kndwin/plugin-organization": ["./packages/effect-auth-plugin-organization/src/index.ts"],
+      "@kndwin/plugin-organization/schema": ["./packages/effect-auth-plugin-organization/src/organization.schema.ts"],
+      "@kndwin/plugin-organization/sql": ["./packages/effect-auth-plugin-organization/src/sql.ts"],
+      "@kndwin/plugin-organization/client": ["./packages/effect-auth-plugin-organization/src/client.ts"]
     }
   },
   "exclude": [

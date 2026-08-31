@@ -4,10 +4,10 @@
   "commit": false,
   "fixed": [
     [
-      "@effect-auth/server",
-      "@effect-auth/client",
-      "@effect-auth/oauth",
-      "@effect-auth/plugin-organization"
+      "@kndwin/server",
+      "@kndwin/client",
+      "@kndwin/oauth",
+      "@kndwin/plugin-organization"
     ]
   ],
   "linked": [],
@@ -15,7 +15,7 @@
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": [
-    "@effect-auth/example-postgres-react",
-    "@effect-auth/example-postgres-foldkit"
+    "@kndwin/example-postgres-react",
+    "@kndwin/example-postgres-foldkit"
   ]
 }

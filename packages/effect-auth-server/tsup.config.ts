@@ -30,7 +30,7 @@ export default defineConfig({
   treeshake: true,
   target: "es2022",
   outDir: "dist",
-  external: [/^effect(\/.*)?$/, /^@effect\/.*$/, /^@react-email\/.*$/, "react", "react-dom", /^@effect-auth\/.*/],
+  external: [/^effect(\/.*)?$/, /^@effect\/.*$/, /^@react-email\/.*$/, "react", "react-dom", /^@kndwin\/.*/],
   esbuildOptions(options) {
     options.jsx = "automatic";
   },

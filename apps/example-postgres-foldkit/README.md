@@ -1,6 +1,6 @@
 # example-postgres-foldkit
 
-Self-contained Postgres + `@effect-auth/server` + Foldkit client.
+Self-contained Postgres + `@kndwin/server` + Foldkit client.
 
 ```
 client/          Vite UI (port 5174), proxies `/auth` → `:3001`
