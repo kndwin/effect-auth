@@ -1,0 +1,86 @@
+.changeset/config.json
+  h_ba3efde196eb39 7-10
+README.md
+  h_ba3efde196eb39 16-17,43,60,80-83
+apps/example-postgres-foldkit/README.md
+  h_ba3efde196eb39 3
+apps/example-postgres-foldkit/client/src/main.ts
+  h_ba3efde196eb39 1
+apps/example-postgres-foldkit/package.json
+  h_ba3efde196eb39 17-18
+apps/example-postgres-foldkit/server/main.ts
+  h_ba3efde196eb39 2-3
+apps/example-postgres-foldkit/tsconfig.json
+  h_ba3efde196eb39 14-17
+apps/example-postgres-react/README.md
+  h_ba3efde196eb39 3
+apps/example-postgres-react/client/src/auth/authMachine.ts
+  h_ba3efde196eb39 1
+apps/example-postgres-react/client/src/runtime.ts
+  h_ba3efde196eb39 1
+apps/example-postgres-react/package.json
+  h_ba3efde196eb39 17-18
+apps/example-postgres-react/server/main.ts
+  h_ba3efde196eb39 2-3
+apps/example-postgres-react/tsconfig.json
+  h_ba3efde196eb39 15-18
+packages/effect-auth-client/CHANGELOG.md
+  h_ba3efde196eb39 1,9
+packages/effect-auth-client/README.md
+  h_ba3efde196eb39 1,6,13-15
+packages/effect-auth-client/package.json
+  h_ba3efde196eb39 2,40
+packages/effect-auth-oauth/CHANGELOG.md
+  h_ba3efde196eb39 1,9
+packages/effect-auth-oauth/README.md
+  h_ba3efde196eb39 1,6-7,24
+packages/effect-auth-oauth/package.json
+  h_ba3efde196eb39 2,44
+packages/effect-auth-oauth/src/github.schema.ts
+  h_ba3efde196eb39 2
+packages/effect-auth-oauth/src/github.ts
+  h_ba3efde196eb39 9
+packages/effect-auth-oauth/src/google.schema.ts
+  h_ba3efde196eb39 2
+packages/effect-auth-oauth/src/google.ts
+  h_ba3efde196eb39 9
+packages/effect-auth-plugin-organization/CHANGELOG.md
+  h_ba3efde196eb39 1,9
+packages/effect-auth-plugin-organization/README.md
+  h_ba3efde196eb39 1,7-10,26-28
+packages/effect-auth-plugin-organization/package.json
+  h_ba3efde196eb39 2,40
+packages/effect-auth-plugin-organization/src/client.ts
+  h_ba3efde196eb39 4
+packages/effect-auth-plugin-organization/src/index.ts
+  h_ba3efde196eb39 1
+packages/effect-auth-plugin-organization/src/organization.http.live.ts
+  h_ba3efde196eb39 4-5
+packages/effect-auth-plugin-organization/src/organization.http.ts
+  h_ba3efde196eb39 3
+packages/effect-auth-plugin-organization/src/organization.schema.ts
+  h_ba3efde196eb39 2
+packages/effect-auth-plugin-organization/src/organization.storage.sql.postgres.integration.ts
+  h_ba3efde196eb39 4-6
+packages/effect-auth-plugin-organization/src/organization.ts
+  h_ba3efde196eb39 3
+packages/effect-auth-server/CHANGELOG.md
+  h_ba3efde196eb39 1
+packages/effect-auth-server/README.md
+  h_ba3efde196eb39 1,6-8,11-12,14-15
+packages/effect-auth-server/package.json
+  h_ba3efde196eb39 2
+tsconfig.json
+  h_ba3efde196eb39 16-26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "194f809b136662e799ed3c3b6d62c89a68b63f87",
+  "prompts": {},
+  "humans": {
+    "h_ba3efde196eb39": {
+      "author": "Kevin <kevin@sucasa.com.au>"
+    }
+  }
+}
