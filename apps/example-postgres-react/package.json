@@ -1,0 +1,33 @@
+{
+  "name": "@effect-auth/example-postgres-react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "db:up": "docker compose up -d --wait",
+    "db:down": "docker compose down",
+    "server": "bun --watch server/main.ts",
+    "client": "vite --config vite.config.ts",
+    "dev": "bun run db:up && bun ./dev.ts",
+    "build": "tsc --noEmit && vite build",
+    "check": "tsc --noEmit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@effect-auth/client": "workspace:*",
+    "@effect-auth/server": "workspace:*",
+    "@effect/platform-bun": "4.0.0-beta.92",
+    "@effect/sql-pg": "4.0.0-beta.92",
+    "effect": "4.0.0-beta.92",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@typeonce/effect-machine": "0.28.0",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "5.1.2",
+    "typescript": "5.9.3",
+    "vite": "7.2.7"
+  }
+}

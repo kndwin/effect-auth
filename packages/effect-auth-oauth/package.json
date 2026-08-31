@@ -1,0 +1,30 @@
+{
+  "name": "@effect-auth/oauth",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
+    "./github": { "types": "./dist/github.d.ts", "import": "./dist/github.js" },
+    "./github/schema": { "types": "./dist/github/schema.d.ts", "import": "./dist/github/schema.js" },
+    "./google": { "types": "./dist/google.d.ts", "import": "./dist/google.js" },
+    "./google/schema": { "types": "./dist/google/schema.d.ts", "import": "./dist/google/schema.js" }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "publishConfig": { "access": "public", "provenance": true },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "bun run build",
+    "check": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "effect": "4.0.0-beta.92",
+    "@effect-auth/server": "workspace:*"
+  },
+  "devDependencies": {
+    "effect": "4.0.0-beta.92",
+    "typescript": "^5.9.3"
+  }
+}

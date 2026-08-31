@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "target": "ES2022",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@effect-auth/server": ["../../packages/effect-auth-server/src/index.ts"],
+      "@effect-auth/server/*": ["../../packages/effect-auth-server/src/*"],
+      "@effect-auth/client": ["../../packages/effect-auth-client/src/client.ts"],
+      "@effect-auth/client/*": ["../../packages/effect-auth-client/src/*"]
+    }
+  },
+  "include": ["client/src", "server", "vite.config.ts"]
+}

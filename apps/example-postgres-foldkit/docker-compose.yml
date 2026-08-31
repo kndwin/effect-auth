@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: effect_auth
+      POSTGRES_PASSWORD: effect-auth
+      POSTGRES_USER: postgres
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d effect_auth"]
+      interval: 1s
+      timeout: 5s
+      retries: 30

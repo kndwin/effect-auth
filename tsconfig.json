@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "declaration": false,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "noUncheckedIndexedAccess": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2022",
+    "paths": {
+      "@effect-auth/server": ["./packages/effect-auth-server/src/index.ts"],
+      "@effect-auth/server/*": ["./packages/effect-auth-server/src/*"],
+      "@effect-auth/client": ["./packages/effect-auth-client/src/client.ts"],
+      "@effect-auth/client/*": ["./packages/effect-auth-client/src/*"],
+      "@effect-auth/oauth": ["./packages/effect-auth-oauth/src/index.ts"],
+      "@effect-auth/oauth/github": ["./packages/effect-auth-oauth/src/github.ts"],
+      "@effect-auth/oauth/google": ["./packages/effect-auth-oauth/src/google.ts"],
+      "@effect-auth/plugin-organization": ["./packages/effect-auth-plugin-organization/src/index.ts"],
+      "@effect-auth/plugin-organization/schema": ["./packages/effect-auth-plugin-organization/src/organization.schema.ts"],
+      "@effect-auth/plugin-organization/sql": ["./packages/effect-auth-plugin-organization/src/sql.ts"],
+      "@effect-auth/plugin-organization/client": ["./packages/effect-auth-plugin-organization/src/client.ts"]
+    }
+  },
+  "exclude": [
+    "packages/effect-auth-server/src/email/templates.tsx",
+    "packages/effect-auth-server/src/storage/sql.postgres.harness.ts",
+    "packages/effect-auth-server/src/storage/sql.postgres.integration.ts",
+    "packages/effect-auth-plugin-organization/src/organization.storage.sql.postgres.integration.ts",
+    "apps/*/dev.ts"
+  ]
+}

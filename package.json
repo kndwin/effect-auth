@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "type": "module",
+  "workspaces": ["packages/*", "apps/*"],
+  "packageManager": "bun@1.3.14",
+  "scripts": {
+    "build": "bun run --filter './packages/*' build",
+    "check": "tsc --noEmit",
+    "check:packages": "bun run --filter './packages/*' check",
+    "clean": "rm -rf packages/*/dist",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.28.1",
+    "@types/node": "^22",
+    "@types/react": "19.2.7",
+    "effect": "4.0.0-beta.92",
+    "react": "19.2.4",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  }
+}
